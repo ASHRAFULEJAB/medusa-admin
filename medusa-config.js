@@ -42,6 +42,7 @@ const plugins = [
       upload_dir: "uploads",
     },
   },
+  
   {
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
@@ -83,16 +84,6 @@ const projectConfig = {
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
   projectConfig,
-  plugins: [
-    // ...
-    {
-      resolve: "@medusajs/admin",
-      /** @type {import('@medusajs/admin').PluginOptions} */
-      options: {
-        autoRebuild: true,
-        // other options...
-      },
-    },
-  ],
+  plugins,
   modules,
 };
